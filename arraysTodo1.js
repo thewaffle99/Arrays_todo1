@@ -12,7 +12,7 @@ function pushFront(arr, val) {
   return arr;
 }
 
-console.log(pushFront(arr, val));
+// console.log(pushFront(arr, val));
 
 // arr = [7, 3, 5, 6, 2, 1];
 // val = 56;
@@ -25,16 +25,16 @@ console.log(pushFront(arr, val));
 //   return tempVal;
 // }
 
-// function popFront(arr) {
-//   var returnVal = arr[0];
-//   for (var i = 1; i < arr.length; i++) {
-//     arr[i - 1] = arr[i];
-//   }
-//   arr.pop(); // Remove the last value
-//   return returnVal;
-// }
-// console.log(popFront(arr));
-// console.log(arr);
+function popFront(arr) {
+  var returnVal = arr[0];
+  for (var i = 1; i < arr.length; i++) {
+    arr[i - 1] = arr[i];
+  }
+  arr.pop(); // Remove the last value
+  return returnVal;
+}
+console.log(popFront(arr));
+console.log(arr);
 
 // arr = [3, 5, 6, 2, 1];
 // val = 56;
